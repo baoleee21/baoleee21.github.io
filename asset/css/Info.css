@@ -1,0 +1,454 @@
+/* A1 đến A15 ảnh phim còn từ B1 trở đi là ảnh phim mới cập nhật */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    background-color: #b5ad96;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+div {
+    display: block;
+}
+
+.header {
+    height: 109px;
+}
+
+.header .header-film {
+    width: 100%;
+}
+
+.header .logo {
+    width: 24%;
+    display: inline-block;
+    float: left;
+    height: 66px;
+}
+
+.header .logo-film {
+    margin-left: 38%;
+    margin-top: 10px;
+    color: #ffff00;
+    font-size: 26px;
+    float: right;
+    cursor: pointer;
+    text-shadow: #ff471a 0.1em 0.1em 0.2em;
+}
+
+.header .Search {
+    float: left;
+    display: inline-block;
+    height: 66px;
+    width: 60%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+}
+
+.header .text-search {
+    font-size: 16px;
+    padding: 4px 98px 4px 29px;
+    margin-left: 80px;
+    margin-top: 10px;
+    border-style: solid;
+    border-radius: 4px;
+    background-color: #ffff;
+}
+
+.header #btn-search {
+    font-size: 16px;
+    padding: 4px 15px 4px 15px;
+    margin-left: 2px;
+    margin-top: 10px;
+    border-style: solid;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.header #btn-search:hover {
+    color: #ff0000;
+    background-color: #00ffff;
+}
+
+.header .btn-login {
+    width: 16%;
+    float: left;
+    display: flex;
+}
+
+.header .login {
+    font-size: 16px;
+    padding: 4px 15px 4px 15px;
+    margin-left: 2px;
+    margin-top: 10px;
+    color: #fff;
+    border-style: solid;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff0000;
+}
+
+.header .login:hover {
+    color: #000;
+}
+
+.header .lists {
+    width: 100%;
+}
+
+.header .list-name {
+    list-style: none;
+}
+
+.header .list-name li {
+    overflow: visible;
+    width: 16.66%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 12px;
+    float: left;
+}
+
+.header .list-name li a {
+    color: #000;
+}
+
+.header .list-name>li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header .list-name a:hover {
+    color: #fff;
+}
+
+.header-film .retieval {
+    display: flex;
+}
+
+.list-film .boxmenu {
+    height: 44px;
+    width: 100%;
+}
+
+.list .fire p:hover {
+    color: #e62e00;
+    text-decoration: underline;
+}
+
+.menucountry {
+    display: flex;
+    line-height: 44px;
+    justify-content: center;
+}
+
+.menucountry .menu {
+    margin-right: 24px;
+    background: #ffff00;
+}
+
+.menuone {
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+#nav {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 32px 0 32px;
+}
+
+.menu:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#nav:hover .subnav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3dfc03;
+    z-index: 100;
+}
+
+#nav:hover .subnav a {
+    color: #000;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 300%;
+}
+
+#nav .subnav li {
+    list-style-type: none;
+    height: 44px;
+}
+
+#nav .subnav li:hover a {
+    color: #ffff00;
+    text-decoration: underline;
+}
+
+#nav .subnav li a {
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+}
+
+.nominations {
+    width: 100%;
+    height: 36px;
+    background-color: #8f7b45;
+    margin: 10px 0;
+}
+
+.nominations .righttop {
+    float: left;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0 25px;
+    color: #fff;
+    line-height: 36px;
+}
+
+.nominations .viewmore {
+    float: right;
+    line-height: 36px;
+}
+
+.nominations .viewmore a {
+    color: #000;
+    text-decoration: none;
+    color: #ffff;
+    padding: 3px 25px;
+}
+
+.nominations .viewmore:hover a {
+    color: #000;
+    text-decoration: underline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: aqua;
+}
+
+.body .list {
+    margin: 40px auto;
+    padding-bottom: 29px;
+}
+
+.body .menulist {
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;    
+}
+
+.body .formfilm {
+    width: 20%;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+}
+
+.body .note {
+    padding-top: 5px;
+}
+
+.body .note a {
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.body .note a:hover {
+    color: #e62e00;
+    text-decoration: underline;
+}
+
+.list .picture {
+    position: relative;
+    cursor: pointer;
+}
+
+.list .episode {
+    position: absolute;
+    top: 0;
+    left: 13px;
+    background-color: #3399ff;
+    background-repeat: no-repeat;
+    border: 0 solid #ccc;
+    border-radius: 3px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.list .episode a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.body .keyword {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.footer .container {
+    width: 100%;
+    font-size: 12px;
+    padding-top: 10px;
+    display: flex;
+    padding-bottom: 44px;
+    background-color: #5e5847;
+}
+
+.footer .container a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer .desc {
+    width: 60%;
+    margin-left: 50px;
+}
+
+.footer .info {
+    width: 40%;
+    display: flex;
+    padding-left: 60px;
+}
+
+.footer .info .column {
+    padding-left: 20px;
+}
+
+.footer .info .column li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.info .heading {
+    padding-bottom: 5px;
+}
+
+.root .ends {
+    text-align: center;
+    background-color: #5e5847;
+}
+
+.trailer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailer.open {
+    display: flex;
+}
+
+.trailer-container {
+    background-color: #b5ad96;
+    width: 840px;
+    min-height: 200px;
+    border: 0 solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    animation: trailerInd ease 0.3s;
+}
+
+.trailer-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.trailer-close:hover {
+    background-color: #ccc;
+    color: #000;
+    opacity: 1;
+}
+
+.trailer-heading {
+    font-size: 30px;
+    line-height: 36px;
+    padding-left: 92px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.textlign {
+    display: flex;
+    padding-left: 92px;
+    cursor: pointer;
+}
+
+.textlign h3:hover {
+    color: #ff0000;
+}
+
+.textlign p {
+    padding-left: 15px;
+}
+
+.trailer-video {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.time {
+    display: flex;
+    padding-left: 105px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+@keyframes trailerInd {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.btn-white {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+}
+
+.dark-mode {
+    background-color: #fff;
+}

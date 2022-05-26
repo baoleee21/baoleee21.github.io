@@ -1,0 +1,57 @@
+.watch-body {
+    width: 100%;
+}
+
+.center-watch {
+    padding: 20px 0;
+    width: 979px;
+    padding-left: 434px;
+}
+
+.body-watch-header {
+    display: flex;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.body-watch-header a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.body-watch-header video {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container-watch {
+    display: flex;
+    width: 660px;
+}
+
+.list-episode {
+    padding-right: 5px;
+}
+
+.list-episode>a {
+    float: left;
+    margin: 0 5px 15px 5px;
+    padding: 7px;
+    background: #3a3a3a;
+    color: #fdfdfd;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.watch-content {
+    width: 660px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: justify;
+}

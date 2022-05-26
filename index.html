@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies OnLine</title>
+    <link rel="stylesheet" href="asset/css/Info.css">
+    <link rel="stylesheet" href="asset/font/themify-icons/themify-icons.css">
+    <link rel="shortcut icon" href="asset/css/img/Icon/Icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="root">
+        <div class="header">
+            <div class="header-film">
+                <div class="tester">
+                    <div class="logo">
+                        <a href="#">
+                            <h1 class="logo-film" title="OnlineTV">ONLINE TV</h1>
+                        </a>
+                    </div>
+                    <div class="Search">
+                        <input name="txt-Search" type="text" class="text-search" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;" value="Nhập vài từ nổi bật là đủ">
+                        <a href="" title="Tìm kiếm"><input type="button" value="Tìm Kiếm" id="btn-search"></a>
+                    </div>
+                </div>
+                <div class="retieval">
+                    <div class="btn-login">
+                        <a title="Đăng Nhập" href="login_form/web/index.html"><input class="login" value="Đăng Nhập" type="button"></a>
+                        <a title="Đăng Kí" href="login_form/web/SigIn.html"><input class="login" type="button" value="Đăng Kí"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lists">
+                <ul class="list-name">
+                    <li style="background-color:#1070bc"><a href="#" title="Phim Bộ Hay">Phim bộ hay</a></li>
+                    <li style="background-color:#66ff33"><a href="#" title="Phim Mới">Phim Mới</a></li>
+                    <li style="background-color:#006478"><a href="#" title="Trung Quốc">Trung Quốc</a></li>
+                    <li style="background-color:#0489b1"><a href="#" title="Hàn Quốc">Hàn Quốc</a></li>
+                    <li style="background-color:#006ea0"><a href="#" title="Hoạt Hình">Hoạt Hình</a></li>
+                    <li style="background-color:#007864"><a href="#" title="Ca Nhạc">Ca Nhạc</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="list-film">
+            <div class="boxmenu">
+                <div class="menucountry">
+                    <div class="menu">
+                        <ul id="nav">
+                            <li>
+                                <i class="menuone ti-menu"></i> <a style="color:#000;" href="#">Danh
+                                        Mục</a>
+                                <div class="subnav">
+                                    <ul class="Muc">
+                                        <li><a href="#">Phiêu Lưu</a></li>
+                                        <li><a href="#">Hành Động</a></li>
+                                        <li><a href="#">Kinh Dị</a></li>
+                                        <li><a href="#">Tình Cảm</a></li>
+                                    </ul>
+                                    <ul class="Muc">
+                                        <li><a href="#">Hài Hước</a></li>
+                                        <li><a href="#">Hình Sự</a></li>
+                                        <li><a href="#">Tâm lí</a></li>
+                                        <li><a href="#">Viễn Tưởng</a></li>
+                                    </ul>
+                                    <ul class="Muc">
+                                        <li><a href="#">Cổ Trang</a></li>
+                                        <li><a href="#">Chiến Tranh</a></li>
+                                        <li><a href="#">Âm Nhạc</a></li>
+                                        <li><a href="#">Shows</a></li>
+
+                                    </ul>
+                                    <ul class="Muc">
+                                        <li><a href="#">Thần Thoại</a></li>
+                                        <li><a href="#">Phim lẻ</a></li>
+                                        <li><a href="#">Hoạt Hình</a></li>
+                                        <li><a href="#">Võ Thuật</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <ul id="nav">
+                            <li>
+                                <i class="menuone ti-menu"></i> <a style="color: #000;" href="">Quốc
+                                        Gia</a>
+                                <div class="subnav">
+                                    <ul class="Muc">
+                                        <li><a href="#">Việt Nam</a></li>
+                                        <li><a href="#">Mỹ</a></li>
+                                        <li><a href="#">Hồng Kông</a></li>
+                                    </ul>
+                                    <ul class="Muc">
+                                        <li><a href="#">Đài Loan</a></li>
+                                        <li><a href="#">Thái Lan</a></li>
+                                        <li><a href="#">Ấn Độ</a></li>
+
+                                    </ul>
+                                    <ul class="Muc">
+                                        <li><a href="#">Nhật Bản</a></li>
+                                        <li><a href="#">Hàn Quốc</a></li>
+                                        <li><a href="#">Trung Quốc</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="nominations">
+                <div class="righttop">
+                    <h4>Phim đề cử <i style="color:#66ff33" class="ti-angle-down"></i></h4>
+
+                </div>
+                <div class="viewmore">
+                    <a href="#newfilm">Mới Cập Nhật >></a>
+                </div>
+            </div>
+            <div class="list">
+                <div class="menulist">
+                    <div class="formfilm">
+                        <div class="picture">
+                            <a href="./watch.html"> <img title="XEM RA EM
+                                        RẤT
+                                        NGỌT NGÀO - Nghe Em
+                                        Rất Ngọt Ngào" src="/asset/css/img/A2.jpg" alt="XEM RA
+                                        EM RẤT NGỌT NGÀO - Nghe Em Rất
+                                        Ngọt Ngào" style="width:239px;height:332px"></a>
+                            <div class="episode"><span><a href="">24/24</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span class="fire js-fire"><p style="cursor:
+                                        pointer;">Xem Ra Em Rất Ngọt Ngào - Nghe
+                                        Em Rất Ngọt Ngào </p></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Khuynh Thế Cẩm Lân Cốc Vũ Lai" src="/asset/css/img/A1.jpg" alt="Khuynh Thế
+                                    Cẩm Lân Cốc Vũ Lai" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">24/24</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span style=><a href="">Khuynh Thế Cẩm Lân Cốc
+                                        Vũ Lai</a></span>
+                        </div>
+                    </div>
+
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="PHẢI CƯỚI RỒI MỚI YÊU - Cưới Xong
+                                    Mình Yêu Nhé" src="/asset/css/img/A3.jpg" alt="PHẢI CƯỚI RỒI MỚI YÊU - Cưới Xong Mình
+                                    Yêu Nhé" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">35/35</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Phải Cưới Rồi Mới Yêu - Cưới
+                                        Xong Mình Yêu Nhé</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Giai Điệu Lãng Mạn - Do Do Sol Sol
+                                    La La Sol" src="/asset/css/img/A4.jpg" alt="Giai Điệu Lãng Mạn - Do Do Sol Sol La
+                                    La Sol" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">16/16</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Giai Điệu Lãng Mạn - Do Do Sol
+                                        Sol La La Sol</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Cửu Lưu Bá Chủ" src="/asset/css/img/A5.jpg" alt="Cửu Lưu Bá
+                                    Chủ" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">36/36</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Cửu Lưu Bá Chủ</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menulist">
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Quá Nhanh Quá Nguy Hiểm 9" src="/asset/css/img/A6.jpg" alt="Quá Nhanh
+                                    Quá Nguy Hiểm 9" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">Full</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Quá Nhanh Quá Nguy Hiểm 9</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Như Ý Phương Phi" src="/asset/css/img/A7.jpg" alt="Như Ý
+                                    Phương Phi" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">40/40</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Như Ý Phương Phi</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Tiểu Nương Tử Nhà Tướng Quân" src="/asset/css/img/A8.jpg" alt="Tiểu Nương
+                                    Tử Nhà Tướng Quân" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">30/30</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Tiểu Nương Tử Nhà Tướng Quân</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Quý Ông Hoàn Hảo Và Cô Nàng Tạm
+                                    Được" src="/asset/css/img/A9.jpg" alt="Quý
+                                    Ông Hoàn Hảo Và Cô Nàng Tạm Được" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">24/24</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Quý Ông Hoàn Hảo Và Cô Nàng Tạm
+                                        Được</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Nửa Là Đường Mật Nửa Là Đau Thương" src="/asset/css/img/A10.jpg" alt="Nửa Là
+                                    Đường Mật Nửa Là Đau Thương" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">36/36</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Nửa Là Đường Mật Nửa Là Đau
+                                        Thương</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menulist">
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="YÊU EM TỪ DẠ DÀY - Anh Thích Em" src="/asset/css/img/A11.jpg" alt="YÊU EM TỪ
+                                    DẠ DÀY - Anh Thích Em" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">24/24</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">YÊU EM TỪ DẠ DÀY - Anh Thích Em</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Ba Lần Gả Trêu Ghẹo Lòng Quân" src="/asset/css/img/A12.jpg" alt="Ba Lần Gả
+                                    Trêu Ghẹo Lòng Quân" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">35/35</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Ba Lần Gả Trêu Ghẹo Lòng Quân</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="THIẾU NỮ ĐẠI NHÂN" src="/asset/css/img/A13.jpg" alt="THIẾU NỮ
+                                    ĐẠI NHÂN" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">32/32</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">THIẾU NỮ ĐẠI NHÂN</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Ly Nhân Tâm Thượng - Nàng Công Chúa
+                                    Không Ngủ" src="/asset/css/img/A14.jpg" alt="Ly Nhân Tâm Thượng - Nàng Công Chúa
+                                    Không Ngủ" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">35/35</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Ly Nhân Tâm Thượng - Nàng Công
+                                        Chúa Không Ngủ</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Em Là Định Mệnh Đời Anh - Định Mệnh
+                                    Anh Yêu Em 2020" src="/asset/css/img/A15.jpg" alt="Em Là Định
+                                    Mệnh Đời Anh - Định Mệnh Anh Yêu Em 2020" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">36/36</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Em Là Định Mệnh Đời Anh - Định
+                                        Mệnh Anh Yêu Em 2020</a></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="newfilm" class="nominations">
+                <div class="righttop">
+                    <h4>Mới Cập Nhật <i style="color:#66ff33" class="ti-angle-down"></i></h4>
+
+                </div>
+                <div class="viewmore">
+                    <a href="#cartoon">Phim Hoạt Hình>></a>
+                </div>
+            </div>
+            <div class="list">
+                <div class="menulist">
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Bắt Ma Phá Án" src="/asset/css/img/B1.jpeg" alt="Bắt Ma Phá
+                                    Án" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Bắt Ma Phá Án</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Cảnh Đẹp Ngày Vui Biết Bao Giờ" src="/asset/css/img/B2.jpg" alt="Cảnh Đẹp
+                                    Ngày Vui Biết Bao Giờ" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Cảnh Đẹp Ngày Vui Biết Bao Giờ
+                                    </a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Một Vạn Lần Cứu Anh" src="/asset/css/img/B3.jpeg" alt="Một Vạn
+                                    Lần Cứu Anh" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Một Vạn Lần Cứu Anh</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Lời Nguyền Pho Tượng Cổ - Monstrous
+                                    2022" src="/asset/css/img/B4.jpeg" alt="Lời
+                                    Nguyền Pho Tượng Cổ - Monstrous 2022" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Lời Nguyền Pho Tượng Cổ -
+                                        Monstrous 2022</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Xin Gọi Tôi Là Tổng Giám" src="/asset/css/img/B5.jpg" alt="Xin Gọi Tôi
+                                    Là Tổng Giám" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Xin Gọi Tôi Là Tổng Giám</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menulist">
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Phong Khởi Lũng Tây" src="/asset/css/img/B6.jpeg" alt="Phong Khởi
+                                    Lũng Tây" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Phong Khởi Lũng Tây</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Yêu Nhầm Chị Dâu" src="/asset/css/img/B7.jpg" alt="Yêu Nhầm
+                                    Chị Dâu" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Yêu Nhầm Chị Dâu</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Thiếu Gia Xã Hội Đen Yêu Tôi" src="/asset/css/img/B8.jpeg" alt="Thiếu Gia
+                                    Xã Hội Đen Yêu Tôi" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Thiếu Gia Xã Hội Đen Yêu Tôi</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Chạy Đến Bên Em Với Vận Tốc 493km -
+                                    Love All Play 2022" src="/asset/css/img/B9.jpeg" alt="Chạy Đến
+                                    Bên Em Với Vận Tốc 493km - Love All Play
+                                    2022" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Chạy Đến Bên Em Với Vận Tốc
+                                        493km - Love All Play 2022</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Blues Nơi Đảo Xanh" src="/asset/css/img/B10.jpeg" alt="Blues Nơi
+                                    Đảo Xanh" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Blues Nơi Đảo Xanh</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menulist">
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Công Tố Viên Chuyển Sinh - Tái Sinh
+                                    Báo Thù" src="/asset/css/img/B11.jpeg" alt="Công Tố Viên Chuyển Sinh - Tái Sinh Báo
+                                    Thù" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Công Tố Viên Chuyển Sinh - Tái
+                                        Sinh Báo Thù</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Sao Băng - Shooting Stars 2022" src="/asset/css/img/B12.jpeg" alt="Sao Băng
+                                    - Shooting Stars 2022" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Sao Băng - Shooting Stars 2022</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Nhật Ký Tự Do Của Tôi" src="/asset/css/img/B13.jpeg" alt="Nhật Ký
+                                    Tự Do Của Tôi" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Nhật Ký Tự Do Của Tôi</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Thả Thí Thiên Hạ - Tranh Thiên Hạ" src="/asset/css/img/B14.jpeg" alt="Thả Thí
+                                    Thiên Hạ - Tranh Thiên Hạ" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Thả Thí Thiên Hạ - Tranh Thiên
+                                        Hạ</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Chúc Khanh Hảo" src="/asset/css/img/B15.jpeg" alt="Chúc
+                                    Khanh Hảo" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Chúc Khanh Hảo</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menulist">
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Sơn Hà Nguyệt Minh - Giang Sơn Kỷ" src="/asset/css/img/B16.jpg" alt="Sơn Hà
+                                    Nguyệt Minh - Giang Sơn Kỷ" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">45/45</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Sơn Hà Nguyệt Minh - Giang Sơn
+                                        Kỷ</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Ai Là Nữ Hoàng Mùa 2" src="/asset/css/img/B17.jpg" alt="Ai Là Nữ
+                                    Hoàng Mùa 2" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Ai Là Nữ Hoàng Mùa 2</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Trân Tu Ký" src="/asset/css/img/B18.jpeg" alt="Trân Tu
+                                    Ký" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Trân Tu Ký</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Ngự Giao Ký Phần 2" src="/asset/css/img/B19.jpg" alt="Ngự Giao
+                                    Ký Phần 2" style="width:239px;height:332px">
+                            <div class="episode"><span><a href="">20/20</a></span></div>
+                        </div>
+                        <div class="note">
+                            <span><a href="">Ngự Giao Ký Phần 2</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Ngày Mai - Tomorrow 2022" src="/asset/css/img/B20.jpeg" alt="Ngày Mai
+                                    - Tomorrow 2022" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Ngày Mai - Tomorrow 2022</a></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="cartoon" class="nominations">
+                <div class="righttop">
+                    <h4>Phim Hoạt Hình<i style="color:#66ff33" class="ti-angle-down"></i></h4>
+                </div>
+                <div class="viewmore">
+                    <a href="#lovefilm">Phim Yêu Thích>></a>
+                </div>
+            </div>
+            <div class="list">
+                <div class="menulist">
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Tử Xuyên (Phần 1)" src="/asset/css/img/C1.jpg" alt="Tử Xuyên
+                                    (Phần 1)" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Tử Xuyên (Phần 1)</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Thanh Gươm Diệt Quỷ (P2): Kỹ Viện
+                                    Trấn (Phố Đèn Đỏ)" src="/asset/css/img/C2.jpg" alt="Thanh Gươm
+                                    Diệt Quỷ (P2): Kỹ Viện Trấn (Phố Đèn Đỏ)" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Thanh Gươm Diệt Quỷ (P2): Kỹ
+                                        Viện Trấn (Phố Đèn Đỏ)</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Đỉnh Núi Của Những Vị Thần" src="/asset/css/img/C3.jpg" alt="Đỉnh Núi
+                                    Của Những Vị Thần" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Đỉnh Núi Của Những Vị Thần</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Biệt Đội Hải Cẩu" src="/asset/css/img/C4.jpg" alt="Biệt Đội
+                                    Hải
+                                    Cẩu" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Biệt Đội Hải Cẩu</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Trở Lại Vùng Hoang Dã" src="/asset/css/img/C5.jpg" alt="Trở Lại
+                                    Vùng
+                                    Hoang Dã" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Trở Lại Vùng Hoang Dã</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="lovefilm" class="nominations">
+                <div class="righttop">
+                    <h4>Phim Yêu Thích<i style="color:#66ff33" class="ti-angle-down"></i></h4>
+                </div>
+            </div>
+            <div class="list">
+                <div class="menulist">
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Hẹn Hò Chốn Công Sở 2022" src="/asset/css/img/D1.jpg" alt="Hẹn Hò Chốn
+                                    Công Sở 2022" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Hẹn Hò Chốn Công Sở 2022</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Dư Sinh Xin Chỉ Giáo Nhiều Hơn 2022" src="/asset/css/img/D2.png" alt="Dư Sinh Xin
+                                    Chỉ Giáo Nhiều Hơn 2022" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Dư Sinh Xin Chỉ Giáo Nhiều Hơn
+                                        2022</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Xin Chào Tay Súng Thần 2022" src="/asset/css/img/D3.jpg" alt="Xin Chào
+                                    Tay Súng Thần 2022" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Xin Chào Tay Súng Thần 2022</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Ngôi Trường Xác Sống 2022" src="/asset/css/img/D4.jpg" alt="Ngôi Trường
+                                    Xác Sống 2022" style="width:239px;height:332px">
+
+                        </div>
+                        <div class="note">
+                            <span><a href="">Ngôi Trường Xác Sống 2022</a></span>
+                        </div>
+                    </div>
+                    <div class="formfilm">
+                        <div class="picture">
+                            <img title="Saree Yêu Dấu 2022" src="/asset/css/img/D5.jpg" alt="Saree Yêu
+                                    Dấu 2022" style="width:239px;height:332px">
+                        </div>
+                        <div class="note">
+                            <span><a href="">Saree Yêu Dấu 2022</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nominations">
+                <div class="righttop">
+                    <h4>TỪ KHÓA ĐƯỢC QUAN TÂM</h4>
+                </div>
+            </div>
+            <div class="keyword">
+                <span>Xem phim online, Phim mới, phim hành động tình cảm võ
+                        thuật kiếm hiệp hay đặc sắc 2022 <br>
+                        Xem phim miễn phí chất lượng Full HD, phim thuyết minh
+                        lồng tiếng Việt, phim phụ đề việt, vietsub nhanh nhất,
+                        những bộ phim hay nhất, Xem phim online, Xem phim miễn
+                        phí, tvb, Tội phạm, Tình yêu Phim ma, marvel, Cảnh sát,
+                        Người ngoài hành, Phim viễn tưởng hay, ma cà rồng, quái
+                        vật, Người máy, Phim xác sống, robot, tận thế, sát thủ,
+                        siêu anh hùng, zombie, thảm họa, khủng bố, Thây ma, Giết
+                        người, Điệp viên, Thám tử, phim võ thuật mới nhất với
+                        các màn truy đuổi, đánh nhau và trả thù của các diễn
+                        viên nổi tiếng trung quốc, phim võ thuật Hong kong Hồng
+                        Kông Thái Lan, Phim võ thuật Lý Tiểu Long, Thích Tiểu
+                        Long, Châu Nhuận Phát, Châu Tinh Trì, Phim Võ Thuật Lưu
+                        Đức Hoa, Chung Tử Đơn, Lý Liên Kiện Hay Nhất, Phim Võ
+                        Thuật Đỉnh cao, Phim Võ Thuật trung quốc hàn quốc lồng
+                        tiếng thuyết minh vietsub xem phim VietSub, phim hanh
+                        dong, phim moi, Phim hanh dong My moi, phim trung quoc,
+                        phim vo thuat, phim chieu rap, phim tam ly, tinh cam,
+                        phim tinh cam han quoc, phim hai, phim Võ thuật kiếm
+                        hiệp, phim cổ trang, phim hành động viễn tưởng, phim
+                        thần thoại viễn tưởng, Phim truyện, phim hành động Phiu
+                        lưu mạo hiểm, phim hành động xã hội đen đặc sắc... Phim
+                        võ thuật Hài Hước Châu Tinh Trì hay chưa từng có, Đặc
+                        Biệt, đặc sắc Phim chiếu Rạp hay nhất có một không hai
+                        cực hay. PHIM phim hay nhất, PHIM đặc sắc, đặc biệt,
+                        phim Hình sự, Phiêu Lưu, Cờ Bạc Xã Hội Đen, Tâm Lý Xã
+                        Hội Hàn Quốc, Phim tlxh hay nhất, phim tình cảm hàn
+                        quốc, phim thái lan hay nhất, phim trung quốc hay nhất,
+                        phim hàn quốc hay nhất, Phim võ thuật Hong kong, Phim
+                        kiếm hiệp hay nhất, phim cổ trang hay nhất, Phim Kiếm
+                        Hiệp Hay nhất, phim chiếu rạp hay nhất, fafim thuyết
+                        minh lồng tiếng Phim đài truyền hình, phim vtv thuyết
+                        minh lồng tiếng, phim Chưởng hay nhất, phim chưởng Trung
+                        Quốc, Phim Khoa học, Phim Viễn Tưởng, Phim chiến Tranh,
+                        phim thần thoại hay nhất, Phim ma, Phim Kinh dị đặc sắc,
+                        đặc biệt. Phim vũ khí chiến tranh khoa học viễn tưỡng.
+                        Phim Thái Lan, Phim Nhật Bản, Phim Ấn độ, Phim Nga, Phim
+                        mỹ, Phim Việt Nam, phim đặc sắc, những bộ phim chiếu rạp
+                        hay nhất. PHIM hay, đặc sắc, Đặc biệt, phimmoi, phim hay
+                        vn2, phim moi vn2, phim 2vn, 2vn phim - xem phim nhanh
+                        nhất.vn2.vn cập nhật liên tục các bộ phim hành động
+                        thuyết minh, hàn quốc lồng tiếng, Phim võ thuật đang HOT
+                        nhất, Phim Hàn Quốc thuyết minh tâm lý xã hội, xem Phim
+                        tình cảm Hàn Quốc mới nhất, Lồng tiếng Việt, Phim Thái
+                        Lan Mỹ Trung Quốc Hồng Kong thuyết minh Lồng tiếng hay
+                        nhất...</span>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="desc">
+                    <p>
+                        <b><a href="/">Xem phim online </a></b>miễn phí chất lượng cao với phụ đề tiếng việt - thuyết minh - lồng tiếng. Mọt phim có nhiều thể loại phim phong phú, đặc sắc, nhiều bộ phim hay nhất - mới nhất.</p>
+                    <p>Website motphim.net với giao diện trực quan, thuận tiện, tốc độ tải nhanh, thường xuyên cập nhật các bộ phim mới hứa hẹn sẽ đem lại những trải nghiệm tốt cho người dùng.
+                    </p>
+                </div>
+                <div class="info">
+                    <!--contact-->
+                    <div class="column">
+                        <div class="heading">Quy định</div>
+                        <ul>
+                            <li><a href="#">Điều khoản chung</a></li>
+                            <li><a href="#">Chính sách riêng tư</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <div class="heading">Giới thiệu</div>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="https://www.facebook.com/baole.van.2105/">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ends">
+            <p>© 2022 Le Van Bao Form. All rights reserved | Design by Alan Bảo
+            </p>
+        </div>
+
+    </div>
+    <div class="trailer">
+        <div class="trailer-container">
+            <div class="trailer-header">
+                <div class="trailer-close">
+                    <i class="ti-close"></i>
+                </div>
+                <header class="trailer-heading">
+                    <i style="padding-right: 10px;" class="ti-desktop"></i>Trailer
+                </header>
+            </div>
+            <div class="trailer-body">
+                <div class="textlign">
+                    <h3>XEM RA EM RẤT NGỌT NGÀO</h3>
+                    <p>9.5<i style="color: yellow;padding-left: 3px;" class="ti-star"></i></p>
+                </div>
+                <div class="time">
+                    <p class="trailer-date">(Date : 21/05/2022)</p>
+                </div>
+                <div class="trailer-video">
+                    <video class="video" style="cursor:progress; width:
+                            658px; height: 410px;border-radius: 5px;" loop="loop" src="/asset/css/video/XEM RA EM RẤT NGỌT
+                            NGÀO.mp4" controls controlsList="nodownload"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const filbtn = document.querySelector('.js-fire')
+        const trailer = document.querySelector('.trailer')
+        const close = document.querySelector('.trailer-close')
+        const trailercontainer = document.querySelector('.trailer-container')
+
+        filbtn.addEventListener('click', function() {
+            trailer.classList.add('open')
+        })
+
+        close.addEventListener('click', () => {
+            trailer.classList.remove('open')
+        })
+        trailer.addEventListener('click', () => {
+            trailer.classList.remove('open')
+        })
+        trailercontainer.addEventListener('click', (event) => {
+            event.stopPropagation();
+        })
+    </script>
+</body>
+
+</html>
