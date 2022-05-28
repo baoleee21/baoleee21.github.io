@@ -309,6 +309,7 @@ div {
     padding: 5px;
     letter-spacing: 1px;
     color: #000;
+    text-align: justify;
 }
 
 .footer .container {
